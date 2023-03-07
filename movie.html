@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>movie</title>
+    <link rel="stylesheet" href="css/movie.css">
+    
+</head>
+<body>
+        <div class="header">
+            <nav>
+                <img class="logo" src="images/logo2.png" alt="">
+                <div class="buttons">
+                    <button class="language">English <img class="downimg" src="images/down-icon.png" alt=""></button>
+                    <button class="signin"> Sign in </button>
+                </div>
+            </nav>
+        </div>
+        <div class="text">
+            <h2>At presetn Movie not available, watch the trailer , we will update soon</h2>
+        </div>
+        <div class="movie-container">
+            
+            <iframe src="https://www.youtube.com/embed/XUdcXkvYJs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <!-- <img class="img" src="/images/383463161546a6474ee9a4772eab9d70.png" alt=""> -->
+        <!-- <script>
+            const  v = localStorage.getItem("name1");
+            let img = document.querySelector(".img").src = v;
+            document.querySelector("h2").innerHTML = v;
+        </script> -->
+        <script>
+            let signin= document.querySelector(".signin");
+        signin.addEventListener("click",(e)=>{
+            e.preventDefault();
+            alert("sign in page not avilable at this moment");
+        });
+        </script>
+</body>
+
+</html>

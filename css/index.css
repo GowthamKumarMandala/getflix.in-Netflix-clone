@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+body {
+  background: #000;
+  color: #fff;
+}
+.header {
+  width: 1270px;
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+    url(https://res.cloudinary.com/db1nucrsx/image/upload/v1678192257/netfbody_yh6b1j.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.logo {
+  width: 200px;
+  cursor: pointer;
+  margin-left: -92px;
+  margin-top: 10px;
+}
+.buttons {
+  margin-right: 140px;
+}
+nav button,
+.footer button {
+  outline: 0;
+  border: 0;
+  padding: 7px 26px;
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.language,
+.footer .language-btn {
+  background-color: transparent;
+  border: 0.1px;
+  outline: solid 1px;
+}
+.downimg,
+.footer .language-btn .downimg {
+  width: 10px;
+  margin-left: 10px;
+}
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -20px;
+  font-size: 20px;
+}
+
+.header-content h1 {
+  font-size: 64px;
+  font-weight: 630;
+  line-height: 70px;
+  max-width: 650px;
+  margin-bottom: 10px;
+  margin-left: 90px;
+}
+.header-content h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.email-signup {
+  background: #fff;
+  border-radius: 1px;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.email-signup input {
+  margin-left: 20px;
+  border: 0;
+  outline: 0;
+  flex: 1;
+  font-size: 17px;
+  width: 480px;
+}
+.email-signup button {
+  background-color: red;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 25px;
+  padding: 20px 70px;
+}
+.features {
+  padding: 50px 12%;
+  font-size: 22px;
+}
+hr {
+  height: 7px;
+  background-color: rgb(41, 41, 41);
+  border: 0;
+}
+.row {
+  display: flex;
+  width: 100%;
+  padding: 50px 0;
+}
+.features .text-col {
+  margin-top: 80px;
+  font-size: 35px;
+}
+.features .text-col p {
+  font-size: 33px;
+  margin-top: 20px;
+}
+.features .img-col {
+  margin-top: -80px;
+}
+.features .img-col img {
+  width: 600px;
+  margin-top: -410px;
+}
+.features .img-col video {
+  margin: 60px;
+  z-index: -1;
+}
+
+.faq {
+  padding: 10px 12%;
+  text-align: center;
+  font-size: 18px;
+}
+.faq h2 {
+  font-weight: 600;
+  font-size: 40px;
+}
+.accordion {
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+.accordion li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+input[type="radio"] {
+  display: none;
+}
+.accordion .content {
+  background: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
+
+.faq .email-signup {
+  max-width: 600px;
+  margin: 20px auto 60px;
+}
+.faq small {
+  font-size: 13px;
+}
+
+.footer {
+  padding: 50px 15% 10px;
+
+  border-top: 6px solid #333;
+  color: #777;
+}
+.footer h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.footer col {
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+.footer .col a {
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.footer .col a:hover {
+  color: rgb(9, 150, 231);
+}
+.footer .row {
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.footer .language-btn {
+  background-color: transparent;
+  border: 0.1px;
+  outline: solid 1px;
+  color: white;
+}
+footer {
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+}
+footer span {
+  color: rgb(0, 119, 255);
+}
+
+@media screen and (max-width: 980px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 760px) {
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+      sans-serif;
+  }
+  html {
+    font-size: 45%;
+  }
+  nav {
+    display: flex;
+
+    align-items: center;
+    padding: 13px 95px;
+  }
+  .header {
+    width: 845px;
+    height: 189vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),url(https://res.cloudinary.com/db1nucrsx/image/upload/v1678192257/netfbody_yh6b1j.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+  .buttons {
+    margin-right: -79px;
+  }
+  hr {
+    height: 7px;
+    background-color: rgb(41, 41, 41);
+    border: 0;
+    width: 886px;
+  }
+  .row {
+    display: flex;
+    width: 724px;
+    padding: 46px 41px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .features .text-col {
+    margin-top: 80px;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+  }
+  .faq {
+    text-align: center;
+    font-size: 18px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 716px;
+    margin: 81px;
+    align-items: center;
+    align-content: center;
+  }
+  .footer {
+    padding: 30px 10px;
+    border-top: 6px solid #333;
+    color: #777;
+    width: 861px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+.footer .row {
+  align-items: stretch;
+  justify-content: space-around;
+  width: 850px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 25%;
+  }
+  .header {
+    width: 845px;
+    height: 189vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),url(https://res.cloudinary.com/db1nucrsx/image/upload/v1678192257/netfbody_yh6b1j.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+  nav {
+    display: flex;
+
+    align-items: center;
+    padding: 13px 95px;
+  }
+  .buttons {
+    margin-right: -79px;
+  }
+  hr {
+    height: 7px;
+    background-color: rgb(41, 41, 41);
+    border: 0;
+    width: 886px;
+  }
+  .row {
+    display: flex;
+    width: 724px;
+    padding: 46px 41px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .features .text-col {
+    margin-top: 80px;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+  }
+  .faq {
+    text-align: center;
+    font-size: 18px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 716px;
+    margin: 81px;
+    align-items: center;
+    align-content: center;
+  }
+  .footer {
+    padding: 30px 10px;
+    border-top: 6px solid #333;
+    color: #777;
+    width: 861px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+.footer .row {
+  align-items: stretch;
+  justify-content: space-around;
+  width: 850px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+}

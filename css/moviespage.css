@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background: #000;
+  color: #fff;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.logo {
+  width: 200px;
+  cursor: pointer;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+.buttons {
+  margin-right: 70px;
+}
+nav button,
+.footer button {
+  outline: 0;
+  border: 0;
+  padding: 7px 26px;
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.language,
+.footer .language-btn {
+  background-color: transparent;
+  border: 0.1px;
+  outline: solid 1px;
+}
+.downimg,
+.footer .language-btn .downimg {
+  width: 10px;
+  margin-left: 10px;
+}
+
+.page-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.page-heading h2 {
+  font-size: 28px;
+}
+.movies {
+  background: rgb(22, 22, 22);
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+table,
+th {
+  padding: 8px;
+}
+th a img {
+  width: 171px;
+  margin: 0 15px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer span {
+  color: rgb(0, 119, 255);
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 990px) {
+  html {
+    font-size: 50%;
+  }
+  .logo {
+    width: 230px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 18px;
+  }
+}
+@media screen and (max-width: 790px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+    width: 1020px;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .logo {
+    width: 230px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 18px;
+  }
+  nav button, .footer button {
+    outline: 0;
+    border: 0;
+    padding: 8px 10px;
+    background-color: red;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 26px;
+}
+  .buttons {
+    margin-right: 16px;
+    display: flex;
+  }
+  .page-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 102px;
+    font-size: 25px;
+    width: 1050px;
+}
+.page-heading h2 {
+  font-size: 40px;
+}
+  .movies {
+    background: rgb(22, 22, 22);
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 584px;
+    margin-left: 195px;
+    font-size: 21px;
+}
+}
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 50%;
+  }
+
+  .logo {
+    width: 230px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 18px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+    width: 1020px;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  nav button, .footer button {
+    outline: 0;
+    border: 0;
+    padding: 8px 10px;
+    background-color: red;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 26px;
+}
+  .buttons {
+    margin-right: 16px;
+    display: flex;
+  }
+ 
+  .page-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 102px;
+    font-size: 25px;
+    width: 1050px;
+}
+.page-heading h2 {
+  font-size: 40px;
+}
+  .movies {
+    background: rgb(22, 22, 22);
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 584px;
+    margin-left: 195px;
+    font-size: 21px;
+}
+}
